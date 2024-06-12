@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">News</a>
+                        <a class="nav-link" href="">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.html">Fun</a>
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="soundtracks.html">Soundtracks</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stream.html">Stream</a>
+                        <a class="nav-link active" aria-current="page" href="stream.html">Stream</a>
                     </li>
                 </ul>
             </div>
@@ -76,40 +76,29 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container mt-4">
+    <div class="container my-5">
         <div class="row">
-            <div class="col-md-8">
-                <h2>Latest News</h2>
-                <div class="card mb-3">
-                    <img src="assets/samurai-logo-from-cyberpunk-2077-v0-rmrqxdyupurb1.webp" class="card-img-top" alt="..." style="height: 600px;">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="mb-4">Live Twitch Stream</h2>
+                <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Cyberpunk 2077</h5>
-                        <p class="card-text">Experience Phantom Liberty, the new expansion pack for Cyberpunk!</p>
-                        <a href="news.html" class="btn btn-primary">Tired of reading? Play a game</a>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://player.twitch.tv/?channel=gorgc&parent=127.0.0.1" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="true"></iframe>
+                        </div>
                     </div>
                 </div>
-                <!-- More news articles -->
-            </div>
-            <div class="col-md-4">
-                <h2>Upcoming Games</h2>
-                <div class="card mb-3">
-                    <img src="assets/maxresdefault.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">DOOM: The Dark Ages</h5>
-                        <p class="card-text">The brand new upcoming game in the brutal title. Coming 2025!</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <img src="assets/474206.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dota 2</h5>
-                        <p class="card-text">Valve has shaken up the game with a brand new patch. 7.36 is like never before!</p>
-                    </div>
-                </div>
-                <!-- More upcoming games -->
             </div>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 Gaming Portal. All rights reserved.
+    </footer>
+
+    <script src="pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
